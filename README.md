@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Library
+
+https://www.styled-components.com for the CSS 
+https://draqulajs.com/ for the graphQL 
+https://fr.reactjs.org/ React 
+https://reacttraining.com React router
+https://github.com/AniList/ApiV2-GraphQL-Docs API 
+
+
 ## Available Scripts
 
 In the project directory, you can run:
