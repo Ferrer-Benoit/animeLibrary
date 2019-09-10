@@ -2,11 +2,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Library
 
-https://www.styled-components.com for the CSS 
-https://draqulajs.com/ for the graphQL 
-https://fr.reactjs.org/ React 
-https://reacttraining.com React router
-https://github.com/AniList/ApiV2-GraphQL-Docs API 
+https://www.styled-components.com for the CSS <br>
+https://draqulajs.com/ for the graphQL <br>
+https://fr.reactjs.org/ React <br>
+https://reacttraining.com React router<br>
+https://github.com/AniList/ApiV2-GraphQL-Docs API <br>
 
 
 ## Available Scripts
