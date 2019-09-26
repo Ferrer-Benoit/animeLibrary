@@ -4,14 +4,4 @@
   height: 45vh;
 }
 
-.carousel-indicators {
-  margin: 0;
-  bottom: -25px !important;
-}
 
-img {
-  display: flex;
-  margin: auto;
-  height: 50vh;
-  padding: 1rem;
-}
