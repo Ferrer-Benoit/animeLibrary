@@ -4,16 +4,10 @@ import { getAnime } from "../QueryGQL/GetAnime";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import styled from "styled-components";
 import { ButtonPrimary } from "../utils/buttons";
+import { getIdInUrl } from "../utils/getItemInUrl";
 
 const AnimeContainer = ({ location }) => {
-  const regex = /[0-9]*$/g;
-  let id;
-  let errorId;
-  if (location.search !== "") {
-    [id] = regex.exec(location.search);
-  } else {
-    errorId = <>une erreur c'est produite</>;
-  }
+  const id = getIdInUrl({ location });
 
   const { data, isLoading, error } = useQuery(getAnime, {
     id
@@ -26,7 +20,7 @@ const AnimeContainer = ({ location }) => {
         {error && <span>Error: {error.message}</span>}
       </Container>
     );
-  if (errorId) return <>une Erreur c'est produite</>;
+  if (!id) return <>une Erreur c'est produite</>;
   const {
     bannerImage,
     countryOfOrigin,
@@ -40,8 +34,7 @@ const AnimeContainer = ({ location }) => {
   const pays = correspondance[countryOfOrigin];
   return (
     <Container>
-     
-        <Link to={`/`}>Retour</Link>
+      <Link to={`/`}>Retour</Link>
 
       <Img src={bannerImage} />
       <Infos>

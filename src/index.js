@@ -7,9 +7,11 @@ import { Draqula, DraqulaProvider } from "draqula";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import AnimeCardContainer from "./Containers/AnimeCardContainer";
+import AnimeContainer from "./Containers/AnimeContainer";
+import CategoryContainer from "./Containers/CategoryContainer";
 
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import AnimeContainer from "./Containers/AnimeContainer";
+
 
 const client = new Draqula("https://graphql.anilist.co");
 
@@ -19,6 +21,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/" component={AnimeCardContainer} />
         <Route path="/anime" component={AnimeContainer} />
+        <Route path="/category" component={CategoryContainer} />
       </Switch>
     </DraqulaProvider>
   </Router>,
