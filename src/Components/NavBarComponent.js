@@ -14,11 +14,11 @@ export const NavBarComponent = ({ collection }) => {
     ));
   return (
     <Navbar bg="light" variant="light">
-      <Navbar.Brand href="#home">Anime Library</Navbar.Brand>
+      <Navbar.Brand href="/">Anime Library</Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="/">Home</Nav.Link>
         <Nav.Link href="#features">Features</Nav.Link>
-        <NavDropdown title="Catérogies" id="basic-nav-dropdown">
+        <NavDropdown title="Category" id="basic-nav-dropdown">
           {genre}
         </NavDropdown>
       </Nav>

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import styled from "styled-components";
 import { ButtonPrimary } from "../utils/buttons";
 import { getIdInUrl } from "../utils/getItemInUrl";
+import { NavbarContainer } from "./NavBarContainer";
 
 const AnimeContainer = ({ location }) => {
   const id = getIdInUrl({ location });
@@ -33,10 +34,10 @@ const AnimeContainer = ({ location }) => {
   } = medias || {};
   const pays = correspondance[countryOfOrigin];
   return (
+    
     <Container>
-      <Link to={`/`}>Retour</Link>
-
-      <Img src={bannerImage} />
+       <NavbarContainer />
+          <Img src={bannerImage} />
       <Infos>
         {infosList.map(i => (
           <Info>{medias[i]}</Info>
@@ -60,11 +61,7 @@ const Infos = styled.div`
   flex-direction: column;
 `;
 const Container = styled.section`
-  display: flex;
-  width: 80%;
-  flex-wrap: wrap;
-  background-color: #bfbfbf;
-  margin: auto;
+
 `;
 
 const Button = styled.button`

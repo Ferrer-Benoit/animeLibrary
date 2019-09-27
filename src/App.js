@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import AnimeCardContainer from "./Containers/AnimeCardContainer";
-import AnimeContainer from "./Containers/AnimeCardContainer";
+import AnimeCardContainer from "./Containers/AnimMainContainer";
+import AnimeContainer from "./Containers/AnimMainContainer";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function App() {

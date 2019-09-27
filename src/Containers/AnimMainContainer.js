@@ -8,7 +8,7 @@ import Carousel from "react-bootstrap/Carousel";
 import "./stylesheets/AnimeCardContainer.css";
 import { NavbarContainer } from "./NavBarContainer";
 
-const AnimeCardContainer = () => {
+const AnimMainContainer = () => {
   const [page, setPage] = useState(1);
   const { data, error } = useQuery(getLastAnimes, {
     perPage: 15,
@@ -30,7 +30,7 @@ const AnimeCardContainer = () => {
   );
 };
 
-export default AnimeCardContainer;
+export default AnimMainContainer;
 
 const Container = styled.section`
   background: black;
